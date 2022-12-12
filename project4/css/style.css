@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header { 
+    background: #c2c2c2;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    margin: 35px;
+    font-size: 20px;
+    color:black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.search-bar {
+    width: 50%;
+    height: 20px;
+    background-color: #303030;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.search-bar input {
+    background: none;
+    flex: 1; 
+    border: none;
+    outline: none;
+    padding: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+
+::placeholder {
+    color: white
+}
+
+.search-bar button {
+    border: 0;
+    background: none;
+    color: white;
+    width: 40px;
+    height: 40px; 
+
+}
+
+nav {
+    background: #D9d9d9;
+    height: 40px;
+    width: 100%;
+}
+
+nav ul {
+    float: left;
+    margin-left: 25px;
+}
+
+nav ul li {
+    display: inline-block; 
+    line-height: 40px;
+    margin: 0 10px;
+}
+
+nav ul li a { 
+    color: black;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: white;
+    transition: .5s;
+}
+
+.container {
+    max-width: 100%;
+    margin: 5% 5%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+}
+
+.background {
+    max-width: 100%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.background img {
+    max-width: 100%;
+}
+
+.container-2 {
+    max-width: 100%;
+    margin: 5% 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-1 {
+    flex: 33%;
+    width: 33%;
+    height: 350px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+}
+
+.card-2 {
+    flex: 33%;
+    width: 33%;
+    height: 350px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+}
+
+.card-3 {
+    flex: 33%;
+    width: 33%;
+    height: 350px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #F5F5F5;
+    border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+    .container, .container-2 {
+        flex-direction: row;
+    }
+}
+
+h4 { 
+    margin: 5%;
+    position: relative;
+    text-align: right;
+}
+
+h4 a {
+    color: black;
+}
+
+h4 a:hover{
+    color: lightgray;
+    transition: .5s;
+}
+
+.title {
+    position: absolute;
+    text-align: center;
+    margin: 2.5%;
+    padding: 2px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    height: 20px;
+    width: 50px;
+}
+
+footer {
+    position: absolute;
+    padding-top: 40px;
+    width: 100%;
+    background-color: #303030;
+    color: white;
+}
+
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials li a {
+    text-decoration: none;
+    color: white; 
+    border: none; 
+    width: 20px;
+}
+
+.socials li a:hover{
+    color: darkgoldenrod; 
+}
+
+.footer-menu { 
+    margin-bottom: 30px; 
+}
+
+.footer-menu ul { 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.footer-menu ul li { 
+    margin: 10px;
+    display: block;
+}
+
+.footer-menu ul li a { 
+    color: lightgrey; 
+    border: 1.3px solid white; 
+    padding: 6px 15px; 
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.footer-menu ul li a:hover { 
+    background-color: white;
+    color:#000000;
+    transition: 2s;
+}
+
+.footer-bottom { 
+    background-color: darkgray;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    color: black;
+}
+
+.footer-bottom p a {
+    color: black;
+    padding-bottom: 3px;
+}
+
+.footer-bottom p a:hover {
+    color:white; 
+}
+
+section { 
+    margin: 5%;
+}
+
+section h1 { 
+    padding-bottom: 20px; 
+}
+
+.breadcrumb {
+    list-style: none;
+    background-color: none;
+    margin: 5%;
+  }
+  .breadcrumb li {
+    display: inline;
+    font-size: 12px;
+  }
+  .breadcrumb li + li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  .breadcrumb li a {
+    color: black;
+    text-decoration: none;
+  }
+  .breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 700px) {
+    .footer, .footer-bottom, .footer-menu ul {
+        flex-direction: column;
+    }
+}
+
+.box {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .row::after {
+    display: block;
+  }
+
+  section ul li {
+    padding-bottom: 5px;
+  }
